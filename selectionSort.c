@@ -9,6 +9,7 @@
      *  									 							        *
      **************************************************************************/
 
+//Funcao ordenar array de inteiros
 void selectionSort(int *V, int n){
 	int i, j;
 	int i_min, temp;
@@ -16,8 +17,8 @@ void selectionSort(int *V, int n){
 	for (i = 0; i < n-1; i++){
 		i_min = i;
 		for(j = i+1; j < n; j++){ 
-			if(V[j] < V[i_min]){ //Procura o menor elemento
-				i_min = j;  //Atualiza o valor da menor posição
+			if(V[j] < V[i_min]){ 
+				i_min = j;  //Atualiza o valor da menor posicao
 			}
 		}
 		if(i != i_min){  //Troca o valor das posições atual e menor
