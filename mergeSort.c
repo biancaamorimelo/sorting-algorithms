@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
     /***************************************************************************
-     *  Aluna:          Bianca Karla Amorim de S. Melo 						   *
-	 *	Matricula:      11408143                         					   *
-   	 *  																       *	 
-     *  Implementacao do algoritmo de ordenacaoo por comparacao MergeSort.     *         
-     *  																       *
+     *  Aluna:          Bianca Karla Amorim de S. Melo 				*
+     *	Matricula:      11408143                         			*
+     *  									* 							       *	 
+     *  Implementacao do algoritmo de ordenacaoo por comparacao MergeSort.      *         
+     *  									* 							       *
      **************************************************************************/
 
 
