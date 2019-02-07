@@ -71,7 +71,7 @@ void mergeSort(int *V, int tam){
 int main(){
 	
 	int i, numElementos;
-	int *V; //Array de inteiros
+	int *V;
 	
 
 	printf("Informe o tamanho do vetor a ser ordenado: \n");
