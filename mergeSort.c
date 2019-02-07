@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
     /***************************************************************************
-     *  Aluna:          Bianca Karla Amorim de S. Melo 						   *
-	 *	Matricula:      11408143                         					   *
-   	 *  																       *	 
-     *  Implementacao do algoritmo de ordenacaoo por comparacao MergeSort.     *         
-     *  																       *
+     *  Aluna:          Bianca Karla Amorim de S. Melo 				*
+     *	Matricula:      11408143                         			*
+     *  									* 							       *	 
+     *  Implementacao do algoritmo de ordenacaoo por comparacao MergeSort.      *         
+     *  									* 							       *
      **************************************************************************/
 
 
-//Fun��o para fundir o lado esquerdo e direito ao array V.
-//esqCont = n�mero de elementos na esquerda (E).
-//dirCont = n�mero de elementos na direita (D).
+//Funcaoo para fundir o lado esquerdo e direito ao array V.
+//esqCont = numero de elementos na esquerda (E).
+//dirCont = numero de elementos na direita (D).
 void merge(int *V, int *E, int esqCont, int *D, int dirCont){
 	int i, j, k;  // i (E), j (D), k (V)
 	
@@ -35,19 +35,19 @@ void merge(int *V, int *E, int esqCont, int *D, int dirCont){
 	}
 }
 
-//Fun��o recursiva para ordenar um array de inteiros
+//Funcao recursiva para ordenar um array de inteiros
 void mergeSort(int *V, int tam){
 	int meio;
 	int i;
 	int *E, *D;
 	
-	if (tam < 2) return;  //Se o array possui menos de 2 elementos, n�o fazer nada.
+	if (tam < 2) return;  //Se o array possui menos de 2 elementos, nao fazer nada.
 	
-	meio = tam/2; //Encontrar o �ndice do meio
+	meio = tam/2; //Encontrar o indice do meio
 	
 	//Cria os subarrays da esquerda e da direita
-	//Elementos do meio (do �ndice 0 at� meio-1) devem fazer parte do array da esquerda
-	//Demais elementos (ou seja, meio a tam-1) s�o da direita
+	//Elementos do meio (do indice 0 ate meio-1) devem fazer parte do array da esquerda
+	//Demais elementos (ou seja, meio a tam-1) so da direita
 	
 	E = (int*)malloc(meio*sizeof(int));
 	D = (int*)malloc((tam-meio)*sizeof(int));
@@ -85,7 +85,7 @@ int main(){
 	printf("\n");
 	
 	
-	//Chamada da fun��o para ordena��o dos elementos.
+	//Chamada da funcao para ordenacao dos elementos.
 	mergeSort(V, numElementos);
 	
 	//Exibe os elementos do array ordenados.
