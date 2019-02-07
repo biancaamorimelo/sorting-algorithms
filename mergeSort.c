@@ -10,9 +10,9 @@
      **************************************************************************/
 
 
-//Fun��o para fundir o lado esquerdo e direito ao array V.
-//esqCont = n�mero de elementos na esquerda (E).
-//dirCont = n�mero de elementos na direita (D).
+//Funcao para fundir o lado esquerdo e direito ao array V.
+//esqCont = numero de elementos na esquerda (E).
+//dirCont = numero de elementos na direita (D).
 void merge(int *V, int *E, int esqCont, int *D, int dirCont){
 	int i, j, k;  // i (E), j (D), k (V)
 	
@@ -35,19 +35,19 @@ void merge(int *V, int *E, int esqCont, int *D, int dirCont){
 	}
 }
 
-//Fun��o recursiva para ordenar um array de inteiros
+//Funcao recursiva para ordenar um array de inteiros
 void mergeSort(int *V, int tam){
 	int meio;
 	int i;
 	int *E, *D;
 	
-	if (tam < 2) return;  //Se o array possui menos de 2 elementos, n�o fazer nada.
+	if (tam < 2) return;  //Se o array possui menos de 2 elementos, nao fazer nada.
 	
-	meio = tam/2; //Encontrar o �ndice do meio
+	meio = tam/2; //Encontrar o indice do meio
 	
 	//Cria os subarrays da esquerda e da direita
-	//Elementos do meio (do �ndice 0 at� meio-1) devem fazer parte do array da esquerda
-	//Demais elementos (ou seja, meio a tam-1) s�o da direita
+	//Elementos do meio (do indice 0 ate meio-1) devem fazer parte do array da esquerda
+	//Demais elementos (ou seja, meio a tam-1) sao da direita
 	
 	E = (int*)malloc(meio*sizeof(int));
 	D = (int*)malloc((tam-meio)*sizeof(int));
@@ -70,12 +70,20 @@ void mergeSort(int *V, int tam){
 
 int main(){
 	
-	int V[] = {1, 10, 12, 8, 7, 5, 6, 7, 2, 0, 9, 4, 3, 11}; //Array de inteiros
 	int i, numElementos;
+	int *V; //Array de inteiros
 	
-	//Realizando a contagem da quantidade de elementos no array.
-	numElementos = sizeof(V)/sizeof(V[0]);
+
+	printf("Informe o tamanho do vetor a ser ordenado: \n");
+	scanf("%d", &numElementos);	
 	
+	V = (int*)malloc(numElementos*sizeof(int));
+	
+	printf("Informe o vetor a ser ordenado: \n");
+	for(i = 0; i < numElementos; i++){
+		scanf("%d", &V[i]);
+	}
+		
 	//Exibe os elementos do array antes de serem ordenados.
 	printf("Array desordenado: ");
 	for(i = 0; i < numElementos; i++){
@@ -85,7 +93,7 @@ int main(){
 	printf("\n");
 	
 	
-	//Chamada da fun��o para ordena��o dos elementos.
+	//Chamada da funcao para ordenacao dos elementos.
 	mergeSort(V, numElementos);
 	
 	//Exibe os elementos do array ordenados.
