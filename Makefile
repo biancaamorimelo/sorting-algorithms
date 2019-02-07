@@ -1,5 +1,8 @@
-all: mergeSort quickSort
+all: selectionSort mergeSort quickSort
 
+selectionSort: selectionSort.c
+	gcc selectionSort.c -o selectionSort
+	
 mergeSort: mergeSort.c
 	gcc mergeSort.c -o mergeSort
 	

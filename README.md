@@ -1,11 +1,13 @@
-# Sorting Algorithms
+﻿# Sorting Algorithms
 
 Homework assignments for Algorithms Analysis subject
 
 ## Implemented algorithms:
 
-    ● MergeSort
+    ● Selection Sort
 
-    ● QuickSort
+    ● Merge Sort
+
+    ● Quick Sort
     
     
