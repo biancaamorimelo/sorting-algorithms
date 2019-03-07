@@ -1,4 +1,4 @@
-all: selectionSort insertionSort mergeSort quickSort
+all: selectionSort insertionSort mergeSort quickSort countingSort
 
 selectionSort: selectionSort.c
 	gcc selectionSort.c -o selectionSort
@@ -11,6 +11,9 @@ mergeSort: mergeSort.c
 	
 quickSort: quickSort.c
 	gcc quickSort.c -o quickSort
+
+countingSort: countingSort.c
+	gcc countingSort.c -o countingSort	
 
 clean:
 	rm *.o

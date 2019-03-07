@@ -12,4 +12,5 @@ Homework assignments for Algorithms Analysis subject
 
     ● Quick Sort
     
+    ● Counting Sort
     
