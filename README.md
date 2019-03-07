@@ -14,3 +14,4 @@ Homework assignments for Algorithms Analysis subject
     
     ● Counting Sort
     
+    ● Heap Sort  
